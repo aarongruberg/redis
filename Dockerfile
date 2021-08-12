@@ -10,7 +10,7 @@ RUN mkdir -p /etc/secrets
 RUN chmod 644 /etc/secrets
 
 # create a new user and change to that user
-RUN useradd -ms /bin/bash newuser
+RUN useradd -m /bin/bash newuser
 USER newuser
 
 # make secrets file owned by newuser
